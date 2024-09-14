@@ -1,0 +1,24 @@
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="ParallelTestsSuite" parallel="tests" thread-count="3">
+    <test name="Test1024x768">
+        <parameter name="width" value="1024" />
+        <parameter name="height" value="768" />
+        <classes>
+            <class name="picsart.task.test.java.searchPage.SearchPageTests"/>
+        </classes>
+    </test>
+    <test name="Test1440x900">
+        <parameter name="width" value="1440" />
+        <parameter name="height" value="900" />
+        <classes>
+            <class name="picsart.task.test.java.searchPage.SearchPageTests"/>
+        </classes>
+    </test>
+    <test name="Test1366x768">
+        <parameter name="width" value="1366" />
+        <parameter name="height" value="768" />
+        <classes>
+            <class name="picsart.task.test.java.searchPage.SearchPageTests"/>
+        </classes>
+    </test>
+</suite>
